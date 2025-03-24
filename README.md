@@ -10,6 +10,13 @@ Am Ende müssen Sie Ihr Projekt commiten und pushen. Senden Sie mir den Link in 
 ## Aufgabe 2
 
 Beantworten Sie die folgenden Frage hier direkt im Text: Welche Aufgabe haben cookies in unserer Banking-App?
+- Cookies sind kleine Textdateien die bei dem Besuch unserer Banking App auf dem lokalen Rechner gespeichert werden. Wenn der Kunde unsere Seite erneut besucht 
+werden diese Textdateien wieder zurück an den Server gesendet. Man verwendet Cookies um das Verhalten unserer Benutzer besser zu verstehen. 
+
+
+Warum sind Passkeys besser als die Kombination aus Benutzername/ Kennwort? 
+- Passkeys ist eine Authentifizierungsmethode die auf assymetrischer Verschlüsselung basiert. Durch den öffentlichen ( der auf dem Server gespeichert wird ) und 
+privaten Schlüssel ( der auf dem Gerät des Benutzers gespeichert wird ) ist es schwer als aussenstehender diese codes oder Schlüssel herauszufinden. Es ist viel leichter ein Kennwort herauszufinden als ein Passkey der doppelt verschlüsselt ist und kaum zugänglich ist. Passkeys kann man sich wie 2 Primzahlen vorstellen, weil es einfach ist 2 Primzahlen miteinander zu multiplizieren aber aus einer großen Zahl herauszufinden welche 2 Primzahlen miteinander multipliziert wurden ist schwer und kaum möglich. 
 
 ## Aufgabe 3
 

@@ -161,12 +161,12 @@ app.get('/agb', (req, res) => {
 	if(kunde.IstEingeloggt){
 
 		// Wenn die Zugangsdaten korrekt sind, dann wird die angesurfte Seite gerendert.
-		res.render('login.ejs',{});
+		res.render('agb.ejs',{});
 
 	}else{
 		
 		// Wenn die Zugangsdaten nicht korrekt sind, dann wird die login-Seite gerendert.
-		res.render('agb.ejs',{
+		res.render('login.ejs',{
 			Meldung: "Melden Sie sich zuerst an."
 		});
 	}
@@ -263,7 +263,19 @@ app.post('/profil', (req, res) => {
 });
 
 app.get('/postfach', (req, res) => {
-	res.render('postfach.ejs',{});
+
+	if(kunde.IstEingeloggt){
+
+		// Wenn die Zugangsdaten korrekt sind, dann wird die angesurfte Seite gerendert.
+		res.render('postfach.ejs',{});
+
+	}else{
+		
+		// Wenn die Zugangsdaten nicht korrekt sind, dann wird die login-Seite gerendert.
+		res.render('login.ejs',{
+			Meldung: "Melden Sie sich zuerst an."
+		});
+	}
 });
 
 // Sobald die Seite "Kredit beantragen" aufgerufen wird, wird die app.get abgearbeitet.
